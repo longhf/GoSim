@@ -31,7 +31,7 @@ type ConnectorService struct {
 
 func NewConnectorService() *ConnectorService {
 	return &ConnectorService{
-		handlerManager: hm.NewHandlerManager()
+		handlerManager: hm.NewHandlerManager(),
 	}
 }
 

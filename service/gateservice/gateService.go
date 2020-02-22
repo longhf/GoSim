@@ -31,7 +31,7 @@ type GateService struct {
 func NewGateService() *GateService {
 	return &GateService{
 		clientProxyMap: make(map[common.ClientId]*proxy.ClientProxy, 0),
-		handlerManager: hm.NewHandlerManager()
+		handlerManager: hm.NewHandlerManager(),
 	}
 }
 

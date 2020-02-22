@@ -5,7 +5,7 @@
  * Note:
  */
 
-package server
+package connection
 
 import (
 	pb "github.com/golang/protobuf/proto"

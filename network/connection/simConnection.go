@@ -5,7 +5,7 @@
  * Note: 基于连接的Connection及其Sender定义
  */
 
-package util
+package connection
 
 import (
 	pb "github.com/golang/protobuf/proto"

@@ -1,0 +1,37 @@
+/* Copyright (c) 2020. Xiaolong Xu, ZhejiangLab.
+ * Date: 2020.01.01
+ * Note:
+ */
+syntax = "proto3";
+
+package proto;
+
+
+message RegisterClient {
+	string udpAddr = 1;
+}
+
+message RegisterResult {
+	bool result = 1;
+	string clientID = 2;
+}
+
+message CreateEntity {
+	string clientID = 1;
+	string entityID = 2;
+	uint32 entityType = 3;
+}
+
+message DestroyEntity {
+	string clientID = 1;
+	string entityID = 2;
+}
+
+message PosAndYaw {
+	string clientID = 1;
+	string entityID = 2;
+	float pos_x = 3;
+	float pos_y = 4;
+	float pos_z = 5;
+	float yaw = 6;
+}
